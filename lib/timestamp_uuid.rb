@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require_relative "timestamp_uuid/version"
-require "thread"
 require "securerandom"
 
 # This is a UUID V4 compliant timestamp uuid with millisecond precision, for
@@ -9,8 +8,6 @@ require "securerandom"
 # timestamp (in contrast to time uuids used by e.g. cassandra)
 
 class TimestampUuid
-  # rubocop:disable Rails/TimeZone
-
   MUTEX = Mutex.new
   @@sequence_number = 0
 
