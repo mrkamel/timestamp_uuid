@@ -1,7 +1,7 @@
 # TimestampUuid
 
 A naive UUID V4 compliant timestamp uuid with millisecond precision, for which
-also the string representation is strictly sortable by encoded timestamp.
+also the string representation is correctly sorted by encoded timestamp.
 Please don't confuse it with time uuids used by e.g. cassandra where the string
 representation is not sortable by timestamp. The timestamp occupies 56 bit,
 such that it roughly works for the next 2 million years (from year 2022 on)

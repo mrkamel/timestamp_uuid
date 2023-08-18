@@ -4,8 +4,8 @@ require_relative "timestamp_uuid/version"
 require "securerandom"
 
 # This is a UUID V4 compliant timestamp uuid with millisecond precision, for
-# which also the string representation is strictly sortable by encoded
-# timestamp (in contrast to time uuids used by e.g. cassandra)
+# which also the string representation is correctly sorted by encoded timestamp
+# (in contrast to time uuids used by e.g. cassandra)
 
 class TimestampUuid
   MUTEX = Mutex.new

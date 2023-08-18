@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email = ["benjamin.vetter@wlw.de"]
 
   spec.summary = "UUID V4 compliant sortable timestamp uuid"
-  spec.description = "UUID V4 compliant sortable timestamp uuid"
+  spec.description = "UUID V4 compliant timestamp uuid where also the string representation is correctly sorted by timestamp"
   spec.homepage = "https://github.com/mrkamel/timestamp_uuid"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
